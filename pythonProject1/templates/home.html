@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Awesome Ecommerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+
+        .featured-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .category-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            width: 150px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+   <center><h1>FoodMapdeal</h1></center>
+   <nav>
+        <ul>
+              <li><a href="/">Home</a></li>
+
+            <li><a href="/about">About Us</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <section class="banner">
+        <img src="{{ url_for('static', filename='food map.jpg') }}" alt="Your Image" height="300" width="200">
+    </section>
+
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='R.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Vadapav</h3>
+            <p>Vada pav, also spelled wada pav, is a vegetarian burger. A potato ball or patty, laced with spices, green chili, and garlic, is dipped into a besan(Indianchickpea flour)  and deep fried. The vada is served hot inside a soft bun or bread roll, and with or without some spicy chutneys added on.</p>
+            <h2>Rs 25</h2>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='chole.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Chole bhature</h3>
+            <p>Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a combination of chana masala and bhatura/puri, a deep-fried bread made from maida. Chole bhature is often eaten as a breakfast dish, sometimes accompanied with lassi. It can also be street food or a complete meal and may be accompanied with onions, pickled carrots, green chutney or achaar.</p>
+            <h2>Rs 50</h2>
+            <button href="/bill_form">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='dal.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Dal Makhani</h3>
+            <p>Dal makhani is a dish originating in Punjab region. A relatively modern variation of traditional lentil dishes, it is made with urad dal and other pulses, and includes butter and cream.</p>
+            <h2>Rs 100</h2>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='dosa.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Dosa</h3>
+            <p>A dosa is a thin savory crepe in South Indian cuisine made from a fermented batter of ground black lentils and rice. Dosas are served hot, often with chutney and sambar. Dosa is a signature dish in South India and Sri Lanka, and is popularly served in their respective restaurants around the world.</p>
+            <h2>Rs 50</h2>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="product-card">
+            <img src="{{ url_for('static', filename='s.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Kerla</h3>
+
+            <h2>Rs 50</h2>
+            <button>Add to Cart</button>
+        </div>
+            <div class="product-card">
+            <img src="{{ url_for('static', filename='raj.jpg') }}" alt="Your Image" height="200" width="300">
+            <h3>Chole bhature</h3>
+            <p>Chole bhature is a food dish popular in the Northern areas of the Indian subcontinent. It is a combination of chana masala and bhatura/puri, a deep-fried bread made from maida. Chole bhature is often eaten as a breakfast dish, sometimes accompanied with lassi. It can also be street food or a complete meal and may be accompanied with onions, pickled carrots, green chutney or achaar.</p>
+            <h2>Rs 50</h2>
+            <button>Add to Cart</button>
+
+
+        
+    </section>
+
+   
+    
+</body>
+
+</html>

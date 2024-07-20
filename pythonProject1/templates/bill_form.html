@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bill Form</title>
+</head>
+<body>
+
+<h2>Bill Form</h2>
+
+<form action="/generate_bill" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address" required><br><br>
+  <label for="item">Item:</label><br>
+  <input type="text" id="item" name="item" required><br><br>
+  <label for="quantity">Quantity:</label><br>
+  <input type="number" id="quantity" name="quantity" required><br><br>
+  <label for="price">Price:</label><br>
+  <input type="number" id="price" name="price" required><br><br>
+  <input type="submit" value="Generate Bill">
+</form>
+
+</body>
+</html>
